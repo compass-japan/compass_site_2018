@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>COMPASS-JAPAN</title>
+<meta name="description" content="">
+<meta name=”keywords” content=”,,,”>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+<script src="js/jquery-2.2.4.min.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+
+<script>
+    $(function(){
+	$('#b_btn').on('touchend click',function(){
+   $('#innav:not(:animated)').stop().slideToggle(300);
+  });
+   $(document).on('touchend click',function(e){
+  if (!$(e.target).closest('#innav').length) {
+    $('#innav:not(:animated)').slideUp(300);
+  };
+ });
+});
+</script>
+</head>
+
+<body>
+<header>
+    <div class="logo"></div><!--/.logo-->
+    </header>
+    <nav>
+        <ul class="gnav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUTS</a></li>
+            <li id="b_btn"><a>BUSINESS</a>
+                <ul id="innav">
+                    <li><a href="our_works.html">ourworks</a></li>
+                    <li><a href="our_products.html">ourprodouct</a></li>
+                    <li><a href="business_pertners.html">businesspresents</a></li>
+                </ul><!--/.innav-->
+            </li>
+            <li><a href=#>CONTACT</a></li>
+            <li><a href=#>RECRUIT</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <h1>お問い合わせ</h1>
+<p>当社の事業に関するお問い合わせを下記にて承ります。<br>
+    E-Mail、FAX、電話、いずれの方法でも承ります。お気軽にお問い合わせ下さい。</p>
+
+        <h2>株式会社コンパスジャパン</h2>
+        <p>TEL:03-6908-8849　　FAX：03-6908-8839</p>
+        <p>受付時間：9:30～17:00（土、日、祝日及び12:00～13:00を除く）</p>
+        <p>E-Mail： information@compass-japan.com</p>
+        <p><img src="img/kudanshita_office.jpg" alt="九段下オフィス"></p>
+        
+        <div class="wrapper">
+            
+        <div class="leftbox">
+        <h2>九段下オフィス</h2>
+            <p>〒102-0074　東京都千代田区九段南1-5-6　りそな九段ビル5F</p>
+<p>地下鉄 東京メトロ半蔵門線・東西線・都営新宿線<br>
+「九段下駅」6番出口から出て振り返ると見える、りそな銀行の入ったビルです。</p>
+            <div class="access_map" id="one">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12961.062260175233!2d139.751761!3d35.695082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xad97a4a469238d6a!2z44OK44Os44OD44K444K944K144Ko44OG44KjIOODkOODvOODgeODo-ODq-OCquODleOCo-OCueODu-OCt-OCp-OCouOCquODleOCo-OCuUDmnbHkuqzpg73ljYPku6PnlLDljLo!5e0!3m2!1sja!2sjp!4v1541748581553" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div><!--/.access_map-->
+</div><!--/.leftbox-->
+            
+            <div class="rightbox">
+            
+<h2>高田馬場本社</h2>
+<p>〒169-0075　東京都新宿区高田馬場4-4-11　内藤ビル3-D</p>
+<p>JR線 「高田馬場駅」戸山口（南）を出て<br>
+    メロンパン屋さんの筋を直進。(1分)</p>
+<p>JR線 「高田馬場駅」早稲田口から出て<br>
+    左のパチンコ屋さんの筋を直進、<br>
+    メロンパン屋さんを右折(全5分)</p>
+<p>地下鉄 東西線　「高田馬場駅」１番出口を出て、<br>
+    早稲田口と同じ経路</p>
+<div class="access_map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6479.11242525141!2d139.701608!3d35.712537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d39d6b957fd%3A0xee7eda19b074c558!2z44CSMTY5LTAwNzUg5p2x5Lqs6YO95paw5a6_5Yy66auY55Sw6aas5aC077yU5LiB55uu77yU4oiS77yR77yRIOWGheiXpOODk-ODqw!5e0!3m2!1sja!2sjp!4v1541748828987" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div><!--/.access_map-->
+                
+                </div><!--/.rightbox-->
+                </div><!--/.wrapper-->
+
+    </div><!--/.main-->
+    <footer></footer>
+</body>

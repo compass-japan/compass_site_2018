@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+
+.main{
+    width: 90%;
+    height: auto;
+    margin: 10px auto 0;
+    background: #ddd;
+}
+
+img{
+    text-align: center;;
+    max-width: 80%;
+    height: auto;
+}
+/*-----------img-----------*/
+
+p{
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+
+h1{
+    text-align: center;
+    padding: 50px;
+    font-size: 150%;
+    font-weight: bolder;
+}
+h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.wrapper{
+    overflow: hidden;
+    width: 100%;
+}
+.leftbox{
+    float: left;
+    width: 40%;
+    margin:20px 5% 0;
+    height: 730px;
+}
+.leftbox p{
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1.0;
+} 
+.rightbox{
+    float: right;
+    width: 40%;
+    margin:20px 5% 0;
+    height: 730px}
+
+.rightbox p{
+    padding: 0;
+    margin-top: 5px;
+    line-height: 1.0;
+}
+.access_map{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#one{
+    margin-top: 70px;
+}
