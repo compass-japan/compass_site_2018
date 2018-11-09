@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>COMPASS-JAPAN</title>
+<meta name="description" content="">
+<meta name=”keywords” content=”,,,”>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.2.4.min.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+
+<script>
+    $(function(){
+	$('#b_btn').on('touchend click',function(){
+   $('#innav:not(:animated)').stop().slideToggle(300);
+  });
+   $(document).on('touchend click',function(e){
+  if (!$(e.target).closest('#innav').length) {
+    $('#innav:not(:animated)').slideUp(300);
+  };
+ });
+});
+</script>
+</head>
+
+<body>
+<header>
+    <div class="logo"></div><!--/.logo-->
+    </header>
+    <nav>
+        <ul class="gnav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUTS</a></li>
+            <li id="b_btn"><a>BUSINESS</a>
+                <ul id="innav">
+                    <li><a href="#">ourworks</a></li>
+                    <li><a href="#">ourprodouct</a></li>
+                    <li><a href="#">businesspresents</a></li>
+                </ul><!--/.innav-->
+            </li>
+            <li><a href=#>CONTACT</a></li>
+            <li><a href=#>RECRUIT</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        
+        <h1><font color=gray size=6><b>Business Pertners</b></font></h1>
+        
+<p style="text-align: left">
+    <span style="border-bottom:dotted 2px gray;"><font color=#333333 size=4>クラウド関連</font></span><br>
+    シオン株式会社様と提携して、SPAの事業を行っております。<br> 
+    <br>
+    <span style="border-bottom:dotted 2px gray;"><font color=#333333 size=4>エネルギー関連</font></span><br>
+    HEMS　納入実績1万台、BEMS　300社以上の実績を持つ<br>
+    <a href="http://www.compass-japan.com/%E3%82%AA%E3%83%B3%E3%83%97%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0%E4%BA%8B%E6%A5%AD%E7%B4%B9%E4%BB%8B3.pdf" style="display:inline"><font color=blue>株式会社オンプランニング</font></a>様とビジネス提携してます。<br>
+    <br>
+    <span style="border-bottom:dotted 2px gray;"><font color=#333333 size=4>ヘルス関連</font></span><br>
+    <a href="http://www.compass-japan.com/seihin/mimamori.html" style="display:inline"><font color=blue>見守りシステム</font></a><br>
+    睡眠時のバイタル情報、モーション、室内温度、<br>
+    ドア開閉をスマホやPCで家族が見守ります。<br> 
+</p>        
+        
+    </div><!--/.main-->
+    <footer></footer>
+</body>
