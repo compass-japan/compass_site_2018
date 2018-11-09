@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>COMPASS-JAPAN</title>
+<meta name="description" content="">
+<meta name=”keywords” content=”,,,”>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.2.4.min.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+
+<script>
+    $(function(){
+	$('#b_btn').on('touchend click',function(){
+   $('#innav:not(:animated)').stop().slideToggle(300);
+  });
+   $(document).on('touchend click',function(e){
+  if (!$(e.target).closest('#innav').length) {
+    $('#innav:not(:animated)').slideUp(300);
+  };
+ });
+});
+</script>
+</head>
+
+<body>
+<header>
+    <div class="logo"></div><!--/.logo-->
+    </header>
+    <nav>
+        <ul class="gnav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUTS</a></li>
+            <li id="b_btn"><a>BUSINESS</a>
+                <ul id="innav">
+                    <li><a href="#">ourworks</a></li>
+                    <li><a href="#">ourprodouct</a></li>
+                    <li><a href="#">businesspresents</a></li>
+                </ul><!--/.innav-->
+            </li>
+            <li><a href=#>CONTACT</a></li>
+            <li><a href=#>RECRUIT</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        
+        <h1><font color=gray size=6><b>Our Works</b></font></h1>
+        
+<p style="text-align: left">
+    <span style="border-bottom:dotted 2px gray;"><font color=#333333 size=4>Webサービス</font></span><br>
+    Webサービスの企画、開発、販売。<br>
+    <br>
+    <span style="border-bottom:dotted 2px gray;"><font color=#333333 size=4>HP制作</font></span><br>
+    ホームページを制作致します。<br>
+    <br>
+    <span style="border-bottom:dotted 2px gray;"><font color=#333333 size=4>SES事業</font></span><br>
+    エンジニアと企業間を取り持ちます。<br>
+    <br>
+    <span style="border-bottom:dotted 2px gray;"><font color=#333333 size=4>マーケティング支援</font></span><br>
+    <a href="https://medica.messe-dus.co.jp/home/" style="display:inline"><font color=blue>MEDICA</font></a>や<a href="https://www.phileweb.com/ifa/" style="display:inline"><font color=blue>IFA</font></a>への出展支援や、見学。在欧大手企業への視察支援を行っております。<br>
+    また、各種<a href="http://www.compass-japan.com/promo/index.html" style="display:inline"><font color=blue>プロモーションビデオ</font></a>の制作も行います。<br>
+</p>        
+        
+    </div><!--/.main-->
+    <footer></footer>
+</body>
