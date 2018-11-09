@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>COMPASS-JAPAN</title>
+<meta name="description" content="">
+<meta name=”keywords” content=”,,,”>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.2.4.min.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+
+<script>
+    $(function(){
+	$('#b_btn').on('touchend click',function(){
+   $('#innav:not(:animated)').stop().slideToggle(300);
+  });
+   $(document).on('touchend click',function(e){
+  if (!$(e.target).closest('#innav').length) {
+    $('#innav:not(:animated)').slideUp(300);
+  };
+ });
+});
+</script>
+</head>
+
+<body>
+<header>
+    <div class="logo"></div><!--/.logo-->
+    </header>
+    <nav>
+        <ul class="gnav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUTS</a></li>
+            <li id="b_btn"><a>BUSINESS</a>
+                <ul id="innav">
+                    <li><a href="#">ourworks</a></li>
+                    <li><a href="#">ourprodouct</a></li>
+                    <li><a href="#">businesspresents</a></li>
+                </ul><!--/.innav-->
+            </li>
+            <li><a href=#>CONTACT</a></li>
+            <li><a href=#>RECRUIT</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        
+        <h1><font color=gray size=6><b>Our Products</b></font></h1>
+        
+<p style="text-align: left">
+    <span style="border-bottom:dotted 2px gray;"><font color=#333333 size=4>幸せのクラウド家系図 絆</font></span><br>
+    コミュニケーション機能付きアーカイブ家系図。<br> 
+    どこでもいつでも家族だけで楽しめます。 
+    詳しくは<a href="https://m-kizuna.info/" style="display:inline"><font color=blue>こちら</font></a>。 <br> <br>
+    2018年現在大幅改修中です。<br>
+    <br>
+    <br>
+    <span style="border-bottom:dotted 2px gray;"><font color=#333333 size=4>月報作成支援ソフト 
+        お便り君</font></span><br>
+    様々な悩みを解決する月報作成のためのソフト。
+    詳しくは<a href="http://www.compass-japan.com/otayorikun.html" style="display:inline"><font color=blue>こちら</font></a>。<br>
+</p>        
+        
+    </div><!--/.main-->
+    <footer></footer>
+</body>
